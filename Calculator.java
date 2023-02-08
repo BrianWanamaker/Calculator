@@ -30,7 +30,14 @@ public class Calculator{
         }
         else if(input.toLowerCase().equals("division"))
         {
-            System.out.println(numOne + "/" + numTwo + " = " + (numOne/numTwo));
+            if(numTwo!=0)
+            {
+                System.out.println(numOne + "/" + numTwo + " = " + (numOne/numTwo));
+            }
+            else
+            {
+                System.out.println("Error: Divide by Zero");
+            }    
         }
         else
         {
