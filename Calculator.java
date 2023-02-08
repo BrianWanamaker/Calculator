@@ -9,9 +9,9 @@ public class Calculator{
         System.out.println("Enter two whole numbers");
         System.out.println("Number 1:");
         Scanner in = new Scanner(System.in);
-        int numOne = in.nextInt();
+        float numOne = in.nextFloat();
         System.out.println("Number 2:");
-        int numTwo = in.nextInt();
+        float numTwo = in.nextFloat();
         System.out.println("Would you like to perform 'addition', 'subtraction', 'multiplication', or 'division' ?");
         in.nextLine();
         String input = in.nextLine();   
@@ -34,7 +34,7 @@ public class Calculator{
         }
         else
         {
-            System.out.println("Please try again!");
+            System.out.println("Invalid input,Please try again!");
         }
         
 
