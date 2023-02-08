@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+import javax.lang.model.util.ElementScanner6;
+
 public class Calculator{
 
     public static void main(String[]args)
@@ -10,7 +12,7 @@ public class Calculator{
         int numOne = in.nextInt();
         System.out.println("Number 2:");
         int numTwo = in.nextInt();
-        System.out.println("Would you like to perform 'addition' or 'subtraction' ?");
+        System.out.println("Would you like to perform 'addition', 'subtraction', 'multiplication', or 'division' ?");
         in.nextLine();
         String input = in.nextLine();   
 
@@ -21,6 +23,18 @@ public class Calculator{
         else if(input.toLowerCase().equals("subtraction"))
         {
             System.out.println(numOne + "-" + numTwo + " = " + (numOne-numTwo));
+        }
+        else if(input.toLowerCase().equals("multiplication"))
+        {
+            System.out.println(numOne + "*" + numTwo + " = " + (numOne*numTwo));
+        }
+        else if(input.toLowerCase().equals("division"))
+        {
+            System.out.println(numOne + "/" + numTwo + " = " + (numOne/numTwo));
+        }
+        else
+        {
+            System.out.println("Please try again!");
         }
         
 
