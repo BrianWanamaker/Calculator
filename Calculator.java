@@ -10,6 +10,19 @@ public class Calculator{
         int numOne = in.nextInt();
         System.out.println("Number 2:");
         int numTwo = in.nextInt();
-        System.out.println(numOne + "+" + numTwo + " = " + (numOne+numTwo));
+        System.out.println("Would you like to perform 'addition' or 'subtraction' ?");
+        in.nextLine();
+        String input = in.nextLine();   
+
+        if(input.toLowerCase().equals("addition"))
+        {
+            System.out.println(numOne + "+" + numTwo + " = " + (numOne+numTwo));
+        }
+        else if(input.toLowerCase().equals("subtraction"))
+        {
+            System.out.println(numOne + "-" + numTwo + " = " + (numOne-numTwo));
+        }
+        
+
     }
 }
